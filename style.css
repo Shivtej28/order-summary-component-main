@@ -1,0 +1,128 @@
+
+:root {
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+  }
+*{
+    box-sizing: border-box;
+}
+
+h2,h4 {
+    color: var(--darkblue);
+}
+
+
+body {
+    background: var(--paleblue);
+    /* background-image: url(images/pattern-background-desktop.svg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Red Hat Display", sans-serif;
+    background-size: cover;
+    height: 100%;
+    margin: 40px;
+}
+
+p {
+    font-size: 16px;
+    color: var(--desaturatedblue);
+}
+.main-container {
+ margin: auto;
+ width: 350px;
+ height: 100%;
+ border-radius: 1rem;
+ background-color: white;
+}
+
+.image-container {
+    object-fit: cover;
+    width: 350px;
+    
+}
+
+.image-container img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: contain;
+}
+
+.text-container {
+    width: 350px;
+    text-align: center;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--verypaleblue);
+    margin: 0 1.5em;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+}
+
+.changeBtn {
+    color: var(--brightblue);
+    cursor: pointer;
+}
+.annualplan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.annualplan img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.6rem;
+}
+
+.annual-text {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5px;
+}
+
+.paybtn  {
+    border: none;
+    width: 300px;
+    cursor: pointer;
+    margin: 1rem 1.5rem;
+    border-radius: 10px;
+    background: transparent;
+    background-color: var(--brightblue);
+    color: white;
+    padding: 0.7rem;
+    font-weight: normal;
+    font-family: "Red Hat Display", serif;
+    box-shadow: 5px 5px 10px var(--desaturatedblue);
+
+}
+
+.cancelbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancelbtn p {
+    line-height: 0rem;
+    cursor: pointer;
+    color: var(--desaturatedblue);
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 30px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
